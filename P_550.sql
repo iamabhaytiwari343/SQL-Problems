@@ -4,3 +4,4 @@ FROM
   GROUP BY player_id) a
   LEFT JOIN Activity b
   ON a.player_id = b.player_id AND a.event_date+1 = b.event_date;
+

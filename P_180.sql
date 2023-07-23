@@ -4,3 +4,5 @@ from logs)
 
 select distinct num as consecutiveNums
 from cte where num=next_1 and num=next_2
+
+

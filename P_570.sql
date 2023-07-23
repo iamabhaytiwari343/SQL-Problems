@@ -6,3 +6,5 @@ from Employee
 group by ManagerId
 having count(*) >= 5
 );
+
+

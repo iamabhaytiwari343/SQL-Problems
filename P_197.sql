@@ -7,3 +7,5 @@ w2.Temperature;
 
 select A.Id from Weather as A, Weather as B 
 where A.Temperature > B.Temperature and TO_DAYS(A.recordDate) = TO_DAYS(B.recordDate) + 1
+
+
