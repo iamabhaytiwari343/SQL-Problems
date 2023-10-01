@@ -58,7 +58,7 @@ The basic syntax of a subquery involves placing the inner query within parenthes
 ```sql
 SELECT column1, column2, ...
 FROM table1
-WHERE columnX operator (SELECT columnY FROM table2 WHERE condition);
+WHERE columnX operator (SELECT columnY FROM table2 WHERE condition);```
 
 ### Types of Subqueries:
 
@@ -67,4 +67,4 @@ WHERE columnX operator (SELECT columnY FROM table2 WHERE condition);
 ```sql
 SELECT product_name
 FROM products
-WHERE product_price > (SELECT AVG(product_price) FROM products);
+WHERE product_price > (SELECT AVG(product_price) FROM products);```
