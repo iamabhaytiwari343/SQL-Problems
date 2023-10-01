@@ -13,7 +13,6 @@ Leetcode SQL questions collection.
 | **Aggregated Columns**      | Original columns                             | Result columns based on aggregation functions        |
 | **Aggregation Functions**   | Not used                                      | Commonly used (e.g., COUNT, SUM, AVG, MAX, MIN)      |
 | **Example Query**           | `SELECT * FROM table_name;`                  | `SELECT column1, AGG_FUNC(column2) FROM table GROUP BY column1;` |
-|-----------------------------|-----------------------------------------------|--------------------------------------------------------|
 
 ## Differences Between `WHERE` and `HAVING` Clauses in SQL
 
@@ -24,8 +23,7 @@ Leetcode SQL questions collection.
 | **Filtering**           | Applies to individual rows               | Applies to aggregated/grouped data       |
 | **Aggregation Involvement** | Does not involve aggregation        | Typically involves aggregation functions |
 | **Example Query**       | `SELECT * FROM table WHERE condition;`  | `SELECT column, AGG_FUNC(...) FROM table GROUP BY column HAVING condition;` |
-|-------------------------|------------------------------------------|-------------------------------------------|
-These differences highlight how the `WHERE` and `HAVING` clauses serve different purposes and are used in distinct parts of SQL queries.
+
 
 ## Differences Between `UPDATE` and `REPLACE` in SQL
 
@@ -38,7 +36,4 @@ These differences highlight how the `WHERE` and `HAVING` clauses serve different
 | **Primary Key Usage**     | Typically used with `WHERE` clause to specify the rows to update | Relies on primary keys to determine replacements |
 | **Atomicity**             | An `UPDATE` operation is atomic, affecting only the specified rows | A `REPLACE` operation is also atomic, but it may delete and insert rows |
 | **Indexes and Triggers**  | Triggers and indexes associated with the table may be affected | Triggers and indexes may be affected as well    |
-|---------------------------|------------------------------------------|-------------------------------------------------|
-
-These differences highlight the distinct purposes and characteristics of the `UPDATE` and `REPLACE` operations in SQL.
 
