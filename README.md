@@ -37,3 +37,25 @@ Leetcode SQL questions collection.
 | **Atomicity**             | An `UPDATE` operation is atomic, affecting only the specified rows | A `REPLACE` operation is also atomic, but it may delete and insert rows |
 | **Indexes and Triggers**  | Triggers and indexes associated with the table may be affected | Triggers and indexes may be affected as well    |
 
+## Subqueries in SQL
+
+Subqueries, also known as nested queries or subselects, are a powerful feature in SQL that allow you to embed one query (the inner query or subquery) within another query (the outer query). Subqueries are used for various purposes, including filtering, data retrieval, and making complex queries more manageable.
+
+### Purpose of Subqueries
+
+Subqueries serve several purposes in SQL:
+
+1. **Filtering Data**: Subqueries can be used to filter rows based on conditions. You can use a subquery in the `WHERE` clause of the outer query to retrieve rows from the outer query based on the results of the inner query.
+
+2. **Data Retrieval**: Subqueries can retrieve data from one table and use it in another query. For example, you can use a subquery to retrieve a single value or a set of values that are then used in the main query.
+
+3. **Comparisons**: Subqueries can be used to compare values in one table with values in another table. This is commonly used in scenarios where you need to find records that match certain criteria.
+
+### Syntax of Subqueries
+
+The basic syntax of a subquery involves placing the inner query within parentheses and using it as an operand within another SQL statement. Here's a generic structure:
+
+```sql
+SELECT column1, column2, ...
+FROM table1
+WHERE columnX operator (SELECT columnY FROM table2 WHERE condition);
