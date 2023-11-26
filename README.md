@@ -68,3 +68,4 @@ WHERE columnX operator (SELECT columnY FROM table2 WHERE condition);```
 SELECT product_name
 FROM products
 WHERE product_price > (SELECT AVG(product_price) FROM products);```
+
